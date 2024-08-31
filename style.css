@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #eee;
+  box-sizing: border-box;
+}
+.container {
+  width: 70%;
+  /* background-color: #eaeaea; */
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+}
+.menumobile {
+  display: none;
+}
+
+.nav-brand h1 {
+  font-size: 24px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  margin: 0px 8px;
+  color: darkred;
+}
+
+.nav-button a {
+  margin: 12px;
+}
+
+.nav-button .login {
+  text-decoration: none;
+  color: black;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.hero-tagline {
+  width: 50%;
+  padding: 120px;
+  /* background-color: aqua; */
+  box-sizing: border-box;
+}
+
+.hero-tagline h1 {
+  font-size: 36px;
+  margin-bottom: 18px;
+}
+.hero-tagline p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 18px;
+}
+
+.hero-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  /* background-color: salmon; */
+}
+
+.btn {
+  background-color: darkred;
+  border-radius: 20px;
+  padding: 8px 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.food-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.food-card {
+  padding: 10px;
+  box-shadow: 0px 1px 9px 8px #eee;
+  width: 22%;
+  box-sizing: border-box;
+  margin: 12px 0;
+}
+
+.fc-image {
+  display: flex;
+  justify-content: center;
+  height: 180px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.fc-image img {
+  width: 60%;
+}
+
+.fc-price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.fc-price p {
+  color: #777;
+}
+
+.btn-pesan {
+  margin: 12px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-pesan a {
+  width: 100%;
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  color: wheat;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  color: white;
+}
+
+.footer-need-help ul li {
+  list-style: none;
+}
+
+.footer-need-help a {
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .nav-button {
+    display: none;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    /* background-color: aqua; */
+  }
+  .hero-tagline {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+
+    padding-bottom: 50px;
+    /* background-color: rebeccapurple; */
+    width: 100%;
+  }
+  .hero-image {
+    padding-top: 100px;
+  }
+
+  .container {
+    width: 100%;
+    /* background-color: #eaeaea; */
+    margin: auto;
+  }
+
+  .food-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .food-card {
+    padding: 10px;
+    box-shadow: 0px 1px 9px 8px #eee;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 12px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    text-align: center;
+  }
+}
